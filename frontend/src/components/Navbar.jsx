@@ -129,7 +129,20 @@ const Navbar = () => {
             </div>
 
             {/* Mobile menu button */}
-            <div className="md:hidden">
+            <div className="md:hidden flex items-center gap-10">
+
+              <NavLink
+                    to="/cart"
+                    className="text-white"
+                  >
+                    <FaShoppingCart className="text-lg"/>
+                    {cartItemsCount > 0 && (
+                      <span className="absolute top-2 right-20 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full font-bold shadow-md">
+                        {cartItemsCount}
+                      </span>
+                    )}
+                  </NavLink>
+
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="text-white hover:text-gray-400 focus:outline-none p-2"
