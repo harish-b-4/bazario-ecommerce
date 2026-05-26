@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import api from "../services/api";
 import formatPrice from "../utils/formatPrice";
-import Loader from "../components/Loader";
+
 
 const Checkout = () => {
   const { cart, clearCart } = useCart();

@@ -9,7 +9,7 @@ import Loader from "../components/Loader";
 import formatPrice from "../utils/formatPrice";
 
 const ProductDetails = () => {
-  const { id } = useParams();
+  const { id } = useParams();   //get id from URL
   const { addToCart } = useCart();
   const { user } = useAuth();
 
@@ -18,7 +18,7 @@ const ProductDetails = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetchProduct();
+    fetchProduct();   // fetch product by id
   }, [id]);
 
   const fetchProduct = async () => {
