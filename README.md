@@ -1,3 +1,6 @@
+Live : https://bazario-ecommerce.vercel.app/
+
+
 🛒 E-Commerce Web Application
 
 A full-stack e-commerce web application built using the MERN stack with Firebase Authentication.
